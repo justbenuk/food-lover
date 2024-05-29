@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import logoImage from '@/assets/logo.png'
 import styles from './headewr.module.css'
+import NavLink from "../navlink/navlink"
 export default function Header() {
   return (
     <header className={styles.header}>
@@ -11,8 +12,8 @@ export default function Header() {
       </Link>
       <nav className={styles.nav}>
         <ul>
-          <li><Link href='/meals'>Browse Meals</Link></li>
-          <li><Link href='/community'>Foodies Community</Link></li>
+          <li><NavLink href='/meals'>Browse Meals</NavLink></li>
+          <li><NavLink href='/community'>Foodies Community</NavLink></li>
         </ul>
       </nav>
     </header>
